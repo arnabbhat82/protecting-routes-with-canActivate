@@ -5,8 +5,8 @@ import { AuthGaurd } from './auth-gaurd.service';
 import { ChildComponent } from './child/child.component';
 
 const routes: Routes = [
-  // { path: 'parent', canActivate: [AuthGaurd], component: ParentComponent },
-  { path: 'parent', canActivateChild: [AuthGaurd], component: ParentComponent },
+  { path: 'parent', canActivate: [AuthGaurd], component: ParentComponent },
+  // { path: 'parent', canActivateChild: [AuthGaurd], component: ParentComponent },
   { path: 'child', component: ChildComponent },
 ];
 
